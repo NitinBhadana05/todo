@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .signup-login {
+    
+    background-color: #0f1f37;
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+    font-size: 24px;
+    color: #fff;
+    font-family: Poppins;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+
+  }
+
+  .signup-box{
+    background-color:#ffffff30;
+    height: 650px;
+    width: 420px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.5);
+
+  }
+.glow-box {
+  background-color:#ffffff30;
+    height: 650px;
+    width: 420px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.5);
+
+  position: relative;
+  padding: 30px 60px;
+  color: white;
+  font-size: 20px;
+  border-radius: 14px;
+  background: #111;
+  z-index: 1;
+}
+
+/* animated border */
+.glow-box::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    #00ffff,
+    #ff00ff,
+    #ff9900,
+    #00ffff
+  );
+  background-size: 300% 300%;
+  animation: glowMove 4s linear infinite;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* solid inner border cover */
+.glow-box::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #111;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@keyframes glowMove {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+input::placeholder {
+  color: #aaa;
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+
+
+  .heading{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    
+
+  }
+  b{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+ .inp{
+   /* margin-top: 10px; */
+  margin: 10px;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #ffffff30;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+ }
+ .inp::placeholder{
+    color: #ffffffa5;
+    
+ }
+.submit-button{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #252525;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.submit-button:hover{
+    background-color: #2ed803ef;
+    color: #000000;
+}
+.line{
+
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 400px;
+    border: none;
+    background-color: #ffffff;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    
+}
+.anc{
+    text-decoration: none;
+    color: #ffff00bc;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40%;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.signup-box1{
+    background-color:#ffffff30;
+    height: 555px;
+    width: 520px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  /* .sign{
+    text-decoration: none;
+    padding: 10px;
+  } */
+
+  .anca{
+    font-size: 25px;
+      margin-top: 5px;
+      padding-bottom: 10px;
+      
+  }
+  a:hover{
+    color: #0ea500d3;
+  }
+  .heads{
+    display: flex;
+      justify-content: space-evenly;
+  }
+  .ancaa{
+    font-size: 25px;
+    margin-top: 29px;
+    margin-left: -40px;
+  }
+  
+.completed{
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+
+.todo-box {
+  margin-top: 20px;
+  display: flex;                /* 👈 ONE ROW */
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(245, 245, 86);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.todo-box p {
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+}
+
+.icons a {
+  color: #000;
+  margin-left: 10px;
+}
+
+.todo-box:hover {
+  background: #fff176;              /* lighter yellow */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.icons a:first-child:hover {
+  color: #007bff;                    /* blue */
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+
+.icons a:last-child:hover {
+  color: #dc3545;                    /* red */
+  transform: scale(1.2);
+  transition: 0.2s;
+}
