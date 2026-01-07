@@ -1,4 +1,4 @@
-# Todo
+# Todo App
 
 A simple TODO application / starter repository.
 
